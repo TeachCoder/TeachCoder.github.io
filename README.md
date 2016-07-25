@@ -1,6 +1,6 @@
-# Creative Theme for Jekyll
+# TeachCoder website
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+We are a startup trying to learn best way to help students in India learn technology.
 
 Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
 The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
