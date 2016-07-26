@@ -349,3 +349,17 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+//Blog styling
+.post-container{
+    margin: 54px;
+}
+
+ul.post-list{
+    list-style: none;
+    li {
+        margin: 36px;
+        a {
+            font-size: 36px;
+        }
+    }
+}

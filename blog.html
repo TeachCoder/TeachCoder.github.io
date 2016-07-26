@@ -1,3 +1,23 @@
 ---
 layout: blog-main
+header-img: img/2.jpg"
+title: Learn. Build. Repeat.
+permalink: /blog/
 ---
+{% include blog-header.html %}
+<div class="container">
+	<div class="row">
+	<div class="col-lg-8 col-lg-offset-2">
+		<ul class="post-list">
+			{% for post in site.posts  %}
+
+			<li><a href="{{post.url}}">{{post.title}}</a>
+				<p class="summary">
+					{{post.excerpt}}
+				</p>
+			</li>
+			{% endfor %}
+		</ul>
+		</div>
+	</div>
+</div>
