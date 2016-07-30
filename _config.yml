@@ -11,3 +11,7 @@ facebook_username: "teachcoder"
 
 # Build settings
 markdown: kramdown
+
+collections:
+  courses:
+    output: true

@@ -1,0 +1,13 @@
+---
+layout: blog-main
+title: Courses
+header-img: "img/2.jpg"
+---
+{% include blog-header.html %}
+
+{% for course in site.courses %}
+	<div class="course">
+		<img src="{{ site.baseurl }}/{{ course.header-img}}">
+		<h2><a href="{{course.url}} ">{{ course.title}} </a> </h2>
+	</div>
+{% endfor %} 
