@@ -1,5 +1,5 @@
 ---
-layout: blog-post
+layout: course-page
 title: Programming for kids
-header-img: "img/4.jpg"
+header-img: "img/kids.jpg"
 ---

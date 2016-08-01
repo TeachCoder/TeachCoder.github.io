@@ -7,7 +7,7 @@ url: "www.teachcoder.in" # the base hostname & protocol for your site
 
 twitter_username: "@teachcoder"
 github_username:
-facebook_username: "teachcoder"
+facebook_id: "Teachcoder"
 
 # Build settings
 markdown: kramdown
