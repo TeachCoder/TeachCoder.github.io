@@ -1,0 +1,11 @@
+<section class="course-landing-section" id="value-section">
+		<h1 class="text-center">Few reasons to choose us</h1>
+		<div class="container">
+			<ul class="features-list">
+			{% for i in (0..5)  %}
+				<li><i class="fa fa-3x {{page.icons[i]}} wow bounceIn" data-wow-delay=".1s"></i> {{page.reasons[i]}}</li>
+			{% endfor %}
+				
+			</ul>
+		</div>
+	</section>
