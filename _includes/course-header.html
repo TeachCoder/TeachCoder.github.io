@@ -1,4 +1,4 @@
-<section class="course-header">
+<section class="course-header" style="background-image: url('{{site.base_url}}/{{page.header-img}}');">
 		<div class="row">
 			<div class="container">
 				<div class="col-lg-9">
@@ -9,7 +9,7 @@
 		</div>
 		<div class="form-container">
 			<h3>Get in touch!</h3>
-			<form role="form">
+			<form role="form" action="https://formspree.io/arnav@teachcoder.in" method="POST">
 				<div class="form-group">
 					<label for="name">Name:</label> 
 					<input type="text" class="form-control" name="name">
@@ -22,7 +22,7 @@
 					<label for="contact">Contact no:</label>
 					<input type="text" class="form-control" name="contact">
 				</div>
-				<button type="submit" class="btn btn-default">Contact</button>
+				<button type="submit" class="btn btn-default" name="submit">Contact</button>
 			</form>
 		</div>	
 	</section>

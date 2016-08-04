@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-<body id="landing-page-top">
+<body class="{{page.css-id}}">
 	<a href="tel:08879217083"><button type="button" class="btn btn-default contact-btn fixed-button" data-toggle="tooltip" data-placement="top" title="+91 88792 17083"><i class="fa fa-phone fa-2x"></i> Contact us now</button></a>
 	{% include course-header.html %}
 	
@@ -16,7 +16,7 @@
 					<p>We have seen many kids get excited seeing their apps and games on mobile, now it’s your turn.
 					</p>
 					<div class="form-wrapper">
-						<form class="form-horizontal" role="form">
+						<form class="form-horizontal" role="form" action="https://formspree.io/arnav@teachcoder.in" method="POST">
 							<div class="form-group">
 								<label for="name" class="col-sm-3 control-label">Name:</label> 
 								<div class="col-sm-9">
@@ -35,7 +35,7 @@
 									<input type="text" class="form-control" name="email">	
 								</div>
 							</div>
-							<button type="submit" class="btn btn-default">Enroll Now!</button>
+							<button type="submit" class="btn btn-default" name="submit">Enroll Now!</button>
 						</form>
 					</div>
 				</div>
