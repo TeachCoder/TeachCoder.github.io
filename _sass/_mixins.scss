@@ -27,8 +27,8 @@
 	&.active,
 	.open > .dropdown-toggle & {
 		color: $color;
-		background-color: darken($background, 5%);
-    border-color: darken($border, 7%);
+		background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
 	}
 	&:active,
 	&.active,
@@ -57,12 +57,12 @@
 
 @mixin sans-serif-font()
 {
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Alegreya Sans', sans-serif, Arial, sans-serif;
 }
 
 @mixin serif-font()
 {
-	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Bitter', serif, Arial, sans-serif;
 }
 
 @mixin theme($theme-name, $color, $sec-color){
@@ -71,20 +71,20 @@
 
 	.#{$theme-name}{
 		h1{
-	        font-family: 'Copse', serif;
+	        font-family: $header-font-family;
 	        font-size: 48px;
 	        margin-top:0; 
 	        text-shadow: 1px 1px 1px #1a1a1a;
 	        color: $primary-color;
 	    }
 	    h2{
-	        font-family: 'PT Sans', sans-serif;
+	        font-family: $header-font-family;
 	        padding-left:0;
 	        margin-left: 0; 
 	        text-shadow: 1px 2px 2px #1a1a1a;
 	    }
 	    p{
-	        font-family: 'PT Sans', sans-serif;
+	        font-family: $base-font-family;
 	        font-size: 24px;
 	    }
 	    a {
@@ -123,14 +123,16 @@
 		        border-radius: 6px;
 		        top: 200px;
 		        button{
+		        	
+		        	padding: 12px 24px;
 		            float: right;
 		            @include button-variant(white, $secondary-color, white);
 		        }
 		        h3{
-		            font-family: 'PT Sans', Sans;
+		            font-family: $base-font-family;
 		        }
 		        label{
-		            font-family: 'PT Sans', Sans;
+		            font-family: $base-font-family;
 		            font-size: 16px;
 		        }
 		        input{
@@ -166,7 +168,7 @@
 		        padding: 0;
 		        color: $secondary-color;
 		        li{
-		            font-family: 'PT Sans', sans-serif;
+		            font-family: $base-font-family;
 		            font-size: 24px;
 		            width: 360px;
 		            display: inline-block;
@@ -193,10 +195,15 @@
 		            img{
 		                width: 80px;
 		            }
+		            .student-info{
+		            	color: darken($primary-color, 0%);
+		            	font-size: 17px;
+		            }
 		        }
 		        div.project-container{
 		            img{
-		                width: 50%;
+		            	max-height: 200px;
+		                width: auto;
 		            }
 		            p{
 		                font-size: 12px;
@@ -242,7 +249,7 @@
 		        }
 		        label{
 		            font-size: 20px;
-		            font-family: 'PT Sans', Sans;
+		            font-family: $base-font-family;
 		        }
 		        button{
 		            @include button-variant(white, darken($primary-color, 10%), white);

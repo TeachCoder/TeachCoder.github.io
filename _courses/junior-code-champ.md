@@ -3,8 +3,8 @@ layout: test-layout
 css-id: junior-course
 title: Programming for kids
 header-img: img/kids.jpg
-headline: The most essential course for Kids in this digital age
-sub-headline: Provide kids with new tools and knowledge to boost their creativity and satisfy their curiosity
+headline: Give your kid an edge in this digital age with our one-of-a-kind course!
+sub-headline: Develop their logical thinking and build a robust foundation of code to give them a head-start in this evolving digital age
 reasons:
 - Learning to code develops logical thinking and problem solving capabilities
 - 6 Month long course to help kids learn computer programming
