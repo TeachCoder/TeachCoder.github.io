@@ -64,3 +64,237 @@
 {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
+
+@mixin theme($theme-name, $color, $sec-color){
+	$primary-color: $color;
+	$secondary-color: $sec-color;
+
+	.#{$theme-name}{
+		h1{
+	        font-family: 'Copse', serif;
+	        font-size: 48px;
+	        margin-top:0; 
+	        text-shadow: 1px 1px 1px #1a1a1a;
+	        color: $primary-color;
+	    }
+	    h2{
+	        font-family: 'PT Sans', sans-serif;
+	        padding-left:0;
+	        margin-left: 0; 
+	        text-shadow: 1px 2px 2px #1a1a1a;
+	    }
+	    p{
+	        font-family: 'PT Sans', sans-serif;
+	        font-size: 24px;
+	    }
+	    a {
+		    @include transition-all;
+		    color: $primary-color;
+		    &:hover,
+		    &:focus {
+		        color: darken($primary-color, 10%);
+		    }
+		}
+	    hr.primary{
+	        border-color: $primary-color;
+	    }
+
+	    section.course-header{
+		    position: relative;
+		    width: 100%;
+		    height: 450px;
+		    background-repeat: no-repeat;
+		    background-size: 100% auto;
+		    text-align: left;
+		    padding: 48px;
+		    color: white;
+		    vertical-align: center;
+		    div.form-container{
+		        padding: 0 20px;
+		        -webkit-box-shadow: 2px 3px 17px 4px rgba(0,0,0,0.75);
+		        -moz-box-shadow: 2px 3px 17px 4px rgba(0,0,0,0.75);
+		        box-shadow: 2px 3px 17px 4px rgba(0,0,0,0.75);
+		        background: $primary-color;
+		        width: 300px;
+		        height: 340px;
+		        position: absolute;
+		        margin-right: 50px;
+		        right: 0;
+		        border-radius: 6px;
+		        top: 200px;
+		        button{
+		            float: right;
+		            @include button-variant(white, $secondary-color, white);
+		        }
+		        h3{
+		            font-family: 'PT Sans', Sans;
+		        }
+		        label{
+		            font-family: 'PT Sans', Sans;
+		            font-size: 16px;
+		        }
+		        input{
+		            border: 3px solid $primary-color;
+		            &:focus{
+		                border: 3px solid $secondary-color;
+		            }
+		        }
+		    }
+		    @media (max-width: 480px) {
+		        height: 450px;
+		        background-size: auto 100%;
+		        div.form-container{
+		            display: none;
+		        }
+		        h2{
+		            color: white;
+		            font-size: 24px;
+		        }
+		        
+		    }
+		}
+
+		section.course-landing-section{
+		padding: 50px 0;
+		}
+		section#value-section{
+		    padding-top: 90px;
+		    background: #eeeeee;
+		    ul.features-list{
+		        list-style: none;
+		        text-align: center;
+		        padding: 0;
+		        color: $secondary-color;
+		        li{
+		            font-family: 'PT Sans', sans-serif;
+		            font-size: 24px;
+		            width: 360px;
+		            display: inline-block;
+		            padding: 24px;
+		            i{
+		                display: block;
+		                margin: 24px;
+		            }
+		        }
+		    }
+		}
+
+		section#testimonials{
+		    background: $secondary-color;
+		    h1{
+		        color: $primary-color;
+		    }
+		    div.item{
+		        padding: 60px;
+		        color: white;
+		        div.student-testimonial{
+		            text-align: right;
+		            padding-bottom: 50px;
+		            img{
+		                width: 80px;
+		            }
+		        }
+		        div.project-container{
+		            img{
+		                width: 50%;
+		            }
+		            p{
+		                font-size: 12px;
+		                color: white;
+		            }
+		        }
+		    }
+		    a.carousel-control{
+		        background: none;
+		    }
+		    @media (max-width: 480px) {
+		        div.item{
+		            div.student-testimonial{
+		                text-align: center;
+		                padding-bottom: 50px;
+		                img{
+		                    width: 80px;
+		                }
+		            }
+		            div.project-container{
+		                text-align: center;
+		            img{
+		                width: 70%;
+		            }
+		            p{
+		                font-size: 12px;
+		                color: white;
+		            }
+		        }
+		        }
+		    }
+		}
+
+		section#CTA{
+		    background: #eeeeee;
+		    div.form-wrapper{
+		        padding: 24px;
+		        input{
+		            border: 3px solid #ccc;
+		            &:focus{
+		                border: 3px solid #555;
+		            }
+		        }
+		        label{
+		            font-size: 20px;
+		            font-family: 'PT Sans', Sans;
+		        }
+		        button{
+		            @include button-variant(white, darken($primary-color, 10%), white);
+		            font-size: 20px;
+		            float: right;
+		            border-radius: 12px;
+		            color: white;
+		            text-transform: none;
+		            padding: 14px;
+		        }
+		    }
+		}
+
+		section#footer{
+		    background: $secondary-color;
+		    color: white;
+		    padding-bottom: 0;
+		    img{
+		        margin: auto;
+		    }
+		    hr{
+		        border-color: $primary-color;
+		    }
+
+		}
+
+		button.fixed-button{
+		    position: fixed;
+		    bottom: 0;
+		    right: 0;
+		    margin: 35px;
+		    text-align: center;
+		    z-index: 1200;
+		    background: darken($primary-color, 10%);
+		    color: white;
+		    box-shadow: 4px 4px 5px rgba(0,0,0,0.75);
+		    text-transform: none;
+		    i{
+		        margin-right: 8px;
+		    vertical-align: middle;
+		    }
+		    
+		    
+		}
+		.contact-btn + .tooltip.top > .tooltip-inner {
+		    background-color: #eeeeee;
+		    color: darken($primary-color, 10%);
+		    font-size: 18px;
+		    font-weight: 700;
+		}
+		.contact-btn + .tooltip.top > .tooltip-arrow {display: none;}
+
+		
+	}
+}

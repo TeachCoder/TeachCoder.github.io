@@ -1,6 +1,8 @@
 ---
 layout: test-layout
+css-id: junior-course
 title: Programming for kids
+header-img: img/kids.jpg
 headline: The most essential course for Kids in this digital age
 sub-headline: Provide kids with new tools and knowledge to boost their creativity and satisfy their curiosity
 reasons:
